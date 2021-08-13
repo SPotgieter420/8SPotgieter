@@ -1,0 +1,113 @@
+<!-- Document type HTML -->
+<!DOCTYPE html>
+<!-- specifies the language of the elements content, english -->
+<html lang="en">
+	<!-- head which holds: link to style sheet, title of website, character set=UTF-8 -->
+	<head>
+		<link rel = "stylesheet" href = "../CSS/V3style.css">
+		<title>Tawa Community Hub</title>
+		<meta charset="utf-8">
+		<!-- helps with users searching for website on google -->
+		<meta name="Keywords" content="Tawa, Tawa community, Tawa community hub"/>
+		<meta name="Author" content="Skylar Potgieter"/>
+		<meta name="Description" content="Information on the tawa community"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<!-- Body holds contents for website -->
+	<body>
+		<!-- Div class for navigation -->
+		<div class = "nav">
+			<!-- Div class for navigation drop down menu, buttons link to each page -->
+			<div class = "dropdown">
+				<button class = "dropbtn"><a href = "../Home/V3Home.html">Home</a></button>
+				<div class = "dropdown-content">
+					<a href="../Page1/V3Activities.html">Activities</a>
+					<a href="../Page2/V3Schools.html">Schools</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- SLIDESHOW CONTAINER -->
+		<div class="slideshow-container">
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="../Images/HomeBanner1.jpg" alt="Home Banner 1"/>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="../Images/HomeBanner2.jpg" alt="Home Banner 2"/>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="../Images/HomeBanner3.jpg" alt="Home Banner 3"/>
+			</div>
+			
+			<!-- NEXT AND PREVIOUS BUTTONS -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		
+		<!-- Links to Javascript -->
+		<script src="../Javascript/V3Javascript.js"></script>
+
+		<!-- Home wrapper for images, maps and text -->
+		<div class="HOMEWRAPPER">
+			
+			<!-- Div class containing an image -->
+			<div class="HOMEIMAGE1">
+				<img src="../Images/TawaCommunityCentre.jpg" alt="Tawa Community Centre"/>
+			</div>
+			
+			<!-- Div class containing text -->
+			<div class="HOMETEXT1">
+				<h1>Tawa Community Centre</h1>
+				<h2>The Tawa Community Centre is a large, welcoming facility centrally located in the heart of Tawa. 
+				The centre is used on a regular basis by many community groups for activities such as dancing and fitness classes, art classes, seminars, toastmasters and holiday programmes. 
+				You can also drop in to the centre during opening hours to enjoy a cup of coffee and a chat.</h2>
+			</div>
+			
+			<!-- Div class containing an image image -->
+			<div class="HOMEIMAGE2">
+				<img src="../Images/LindenSocialCentre.jpg" alt="Linden Social Centre"/>
+			</div>
+			
+			<!-- Div class containing text -->
+			<div class="HOMETEXT2">
+				<h1>Linden Social Centre</h1>
+				<h2>The Linden Social Centre is a welcoming facility in the heart of Linden, run by the Wellington City Council. 
+				It has a hall and the Doris Mills Lounge for hire. The centre is used on a regular basis by many community groups. 
+				The coordinator operates out of the Tawa Community Centre. 
+				Activities include: Te Mahuri Te Reo Maori (Whanau) group, Tawa Mahjong, Tawa Lions, Tawa College Community Ed Pilates, Barnardo's PreSchool Music, Nurtured at Home Music, Bharatanatyam Dance Classes, U3A classes, Boxfit, Church groups and private bookings.</h2>
+			</div>
+			
+			<!-- Div class containing an image -->
+			<div class="HOMEIMAGE3">
+				<img src="../Images/Library.jpg" alt="Tawa (Mervyn Kemp) Library"/>
+			</div>
+			
+			<!-- Div class containing text -->
+			<div class="HOMETEXT3">
+				<h1>Tawa Library</h1>
+				<h2>There's more than you think at the local Mervyn Kemp (Tawa) Library. 
+				Whether you want to tackle a new sport, find out about your favourite hobby, learn a new language or just find a great read, this library will help you out. 
+				Send your mind on an exciting journey, as you explore the wonderful world of books and more. 
+				The Tawa Library offers a huge range of services including browsing and study facilities; Magazines, local history collections with references materials and newspapers for use; and even access to the Internet and other electronic resources.</h2>
+			</div>
+			
+			<!-- Div class containing the home page map -->
+			<div class="HOMEMAP">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1pgB5CaeJCG2PueltLiy6eYPecONS8caQ"
+				width="100%" height="100%"></iframe>
+			</div>
+			
+			<!-- Div class for footer whihc holds copyright statement -->
+			<div class ="FOOTER">
+				<marquee BEHAVIOR="ALTERNATE">&#169; Copyright Skylar Potgieter, Tawa College 2021, all rights reserved.</marquee>
+			</div>
+		</div>
+	</body>
+</html>

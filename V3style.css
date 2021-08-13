@@ -1,0 +1,446 @@
+/* Website background colour */
+html{
+background-color: #0c7dba;
+}
+
+/* Gives images/maps drop shadow and rounded corners */
+img, iframe{
+box-shadow: 4px 4px 5px black;
+border-radius: 15px;
+}
+
+/* Sets the grid system for the Home Page */
+.HOMEWRAPPER {
+height: auto;
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-auto-rows: 60px;
+column-gap: 10px;
+row-gap: 1em;
+border-radius: 5px;
+}
+
+/* NAVIGATION */
+
+/* Sets up nav, how it looks and where it's placed */
+.nav{
+background-color: #ffc374;
+font-weight: bold;
+position: fixed;
+left: -10px;
+z-index: 777;
+bottom: 686px;
+width: 1440px;
+height: 72px;
+opacity: 1;
+padding-top: 18px;
+border-radius: 15px;
+}
+
+/* Placement of navigation links/text */
+.nav a {
+float: left;
+font-size: 20px;
+padding-bottom: 14px;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+/* Dropdown menu function(hidden till hovered over and stays to the left) */
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+/* Style for dropdown button */
+.dropdown .dropbtn {
+border: none;
+outline: none;
+background-color: inherit;
+font-family: inherit;
+font-weight: inherit;
+margin: 0;
+}
+
+/* Display for dropdown menu */
+.dropdown-content {
+display: none;
+position: absolute;
+min-width: 160px;
+z-index: 2;
+}
+
+/* Styling for dropdown menu */
+.dropdown-content a{
+float: none;
+background-color: #ffc374;
+text-decoration: none;
+display: block;
+text-align: left;
+border: 2px solid #0c7dba;
+}
+
+/* Display for drodown menu */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* Style for links(Text colour, hover colour, etc.) */
+a:link{color: #0c7dba;} /* unvisited link*/
+a:visited{color: #0c7dba;} /* visited link */
+a:hover{color: white;} /* mouse over link */
+a:active{color: #4cb5ed;} /* selected link */
+
+/* TEXT */
+
+/* Styling for div box heaings(Colour of text, font size, drop shadow, font choice) */
+h1 {
+font-size: 2.3em;
+color: white;
+text-align: center;
+text-shadow: 4px 4px 5px black;
+font-family: 'Brush Script MT';
+}
+
+/* Styling for div box text(Text Colour, font size, drops shadow, padding) */
+h2 {
+font-size: 1.4em;
+color: white;
+text-align: center;
+text-shadow: 2px 2px 4px black;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+/* Styling for moving text in footer(Text colour, font size, padding, drop shadow) */
+marquee {
+	color: #0c7dba;
+	font-size: 1.7em;
+	padding-top: 12px;
+	text-shadow: 0px 0px 2px black;
+}
+
+/*********************** SLIDESHOW STARTS HERE ***************************/
+
+/* Layout elements, makes dealing with sizes of elements easier */
+* {
+box-sizing:border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+position: relative;
+top: 54px;
+right: 8px;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: -15px;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background colour with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 4s;
+animation-name: fade;
+animation-duration: 4s;
+}
+
+/* Time it takes to fade to each image */
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/************************* STYLE SHEET FOR HOME PAGE ***************************/
+
+/* Placement for first image */
+.HOMEIMAGE1 {
+grid-column-start: 2;
+grid-column-end: 6;
+grid-row-start: 2;
+grid-row-end: 9;
+}
+
+/* Placement for first text box */
+.HOMETEXT1 {
+grid-column-start: 6;
+grid-column-end: 10;
+grid-row-start: 2;
+height: 506px;
+border-radius: 15px;
+background-color: #ffc374;
+box-shadow: 4px 4px 5px black;
+}
+
+/* Placement for second image box */
+.HOMEIMAGE2 {
+grid-column-start: 6;
+grid-column-end: 10;
+grid-row-start: 9;
+grid-row-end: 16;
+}
+
+/* Placement for second text box */
+.HOMETEXT2 {
+grid-column-start: 2;
+grid-column-end: 6;
+grid-row-start: 9;
+height: 506px;
+border-radius: 15px;
+background-color: #ffc374;
+box-shadow: 4px 4px 5px black;
+}
+
+/* Placement for third image box */
+.HOMEIMAGE3 {
+grid-column-start: 2;
+grid-column-end: 6;
+grid-row-start: 16;
+grid-row-end: 23;
+}
+
+/* Placement for third text box */
+.HOMETEXT3 {
+grid-column-start: 6;
+grid-column-end: 10;
+grid-row-start: 16;
+height: 506px;
+border-radius: 15px;
+background-color: #ffc374;
+box-shadow: 4px 4px 5px black;
+}
+
+/* Placement for home page map */
+.HOMEMAP {
+grid-column-start: 2;
+grid-column-end: 10;
+grid-row-start: 23;
+height: 506px;
+border-radius: 15px;
+}
+
+/* Placement for footer(for Home page and Schools page) */
+.FOOTER {
+grid-column-start: 1;
+grid-column-end: 12;
+grid-row-start: 30;
+grid-row-end: 31;
+border-radius: 15px;
+background-color: #ffc374;
+box-shadow: 4px 4px 5px black;
+}
+
+
+/************************* STYLE SHEET FOR ACTIVITES PAGE ***************************/
+
+/* Sets grid system for Activities page */
+.ACTWRAPPER {
+height: auto;
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-auto-rows: 60px;
+column-gap: 10px;
+row-gap: 1em;
+border-radius: 5px;
+}
+
+/* Placement for second text box */
+.ACTTEXT2 {
+grid-column-start: 6;
+grid-column-end: 10;
+grid-row-start: 9;
+height: 506px;
+border-radius: 15px;
+background-color: #ffc374;
+box-shadow: 4px 4px 5px black;
+}
+
+/* Placement for second map */
+.ACTMAP2 {
+grid-column-start: 2;
+grid-column-end: 6;
+grid-row-start: 9;
+height: 506px;
+}
+
+/* Placement for third map */
+.ACTMAP3 {
+grid-column-start: 2;
+grid-column-end: 6;
+grid-row-start: 16;
+height: 506px;
+}
+
+/* Placement for third text box */
+.ACTTEXT3 {
+grid-column-start: 6;
+grid-column-end: 10;
+grid-row-start: 16;
+height: 506px;
+background-color: #ffc374;
+border-radius: 15px;
+box-shadow: 4px 4px 5px black;
+}
+
+/* Placement for footer(in activities page) */
+.ACTFOOTER {
+grid-column-start: 1;
+grid-column-end: 12;
+grid-row-start: 23;
+grid-row-end: 24;
+border-radius: 15px;
+background-color: #ffc374;
+box-shadow: 4px 4px 5px black;
+}
+
+/* ACTIVITIES MAPS */
+
+/* Position for first map */
+.map1 {
+	position: relative;
+	bottom: 95px;
+	z-index: -777;
+}
+
+/* Position for second map */
+.map2 {
+	position: relative;
+	bottom: 230px;
+	z-index: -777;
+}
+
+/* Position for third map */
+.map3 {
+	position: relative;
+	bottom: 100px;
+	z-index: -777;
+}
+
+
+/************************* STYLE SHEET FOR SCHOOLS PAGE ***************************/
+
+/* Placement and styling for first school image */
+.SCHOOLIMAGE1 {
+grid-column-start: 2;
+grid-column-end: 6;
+grid-row-start: 10;
+grid-row-end: 17;
+border: 5px dashed black;
+border-radius: 5px;
+}
+
+/* Placement and styling for first school text box */
+.SCHOOLTEXT1 {
+grid-column-start: 6;
+grid-column-end: 10;
+grid-row-start: 10;
+grid-row-end: 17;
+border: 5px dashed black;
+border-radius: 5px;
+background-color: #ffc374;
+}
+
+/* Placement and styling for second school image */
+.SCHOOLIMAGE2 {
+grid-column-start: 2;
+grid-column-end: 6;
+grid-row-start: 17;
+grid-row-end: 24;
+border: 5px dashed black;
+border-radius: 5px;
+}
+
+/* Placement and styling for second school text box */
+.SCHOOLTEXT2 {
+grid-column-start: 6;
+grid-column-end: 10;
+grid-row-start: 17;
+grid-row-end: 24;
+border: 5px dashed black;
+border-radius: 5px;
+background-color: #ffc374;
+}
+
+/* Placement and styling for third school image */
+.SCHOOLIMAGE3 {
+grid-column-start: 2;
+grid-column-end: 6;
+grid-row-start: 24;
+grid-row-end: 31;
+border: 5px dashed black;
+border-radius: 5px;
+}
+
+/* Placement and styling for third school text box */
+.SCHOOLTEXT3 {
+grid-column-start: 6;
+grid-column-end: 10;
+grid-row-start: 24;
+grid-row-end: 31;
+border: 5px dashed black;
+border-radius: 5px;
+background-color: #ffc374;
+}
+
+/* Placement and styling for school map */
+.SCHOOLMAP {
+grid-column-start: 2;
+grid-column-end: 10;
+grid-row-start: 31;
+grid-row-end: 38;
+border: 5px dashed black;
+border-radius: 5px;
+}
